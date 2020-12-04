@@ -1,0 +1,7 @@
+flask
+azure-mgmt-compute
+flake8
+adal
+msrestazure
+virtualenv
+newspaper3k
