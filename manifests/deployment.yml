@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: hardeepsangwanmicroservicesutility 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hardeepsangwanmicroservicesutility
+  template:
+    metadata:
+      labels:
+        app: hardeepsangwanmicroservicesutility 
+    spec:
+      containers:
+        - name: hardeepsangwanmicroservicesutility 
+          image: microservicesutilityregistry.azurecr.io/hardeepsangwanmicroservicesutility
+          ports:
+          - containerPort: 80
